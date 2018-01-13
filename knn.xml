@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knn k="1">
+    <TrainingExample name="h1">
+        <Input>
+            <ComplexFeature name="coord" distanceMetric="Euclidean">
+                <SimpleFeature name="xCoord" distanceMetric="Absolute" stringValue="null" value="12.0"/>
+                <SimpleFeature name="yCoord" distanceMetric="Absolute" stringValue="null" value="25.0"/>
+            </ComplexFeature>
+            <SimpleFeature name="sqft" distanceMetric="Absolute" stringValue="null" value="1200.0"/>
+            <SimpleFeature name="age" distanceMetric="Absolute" stringValue="new" value="-1.0"/>
+        </Input>
+        <Output>
+            <SimpleFeature name="output" distanceMetric="Absolute" stringValue="null" value="500000.0"/>
+        </Output>
+    </TrainingExample>
+    <TrainingExample name="h2">
+        <Input>
+            <ComplexFeature name="coord" distanceMetric="Euclidean">
+                <SimpleFeature name="xCoord" distanceMetric="Absolute" stringValue="null" value="10.0"/>
+                <SimpleFeature name="yCoord" distanceMetric="Absolute" stringValue="null" value="50.0"/>
+            </ComplexFeature>
+            <SimpleFeature name="sqft" distanceMetric="Absolute" stringValue="null" value="1000.0"/>
+            <SimpleFeature name="age" distanceMetric="Absolute" stringValue="old" value="-1.0"/>
+        </Input>
+        <Output>
+            <SimpleFeature name="output" distanceMetric="Absolute" stringValue="null" value="300000.0"/>
+        </Output>
+    </TrainingExample>
+    <TrainingExample name="h3">
+        <Input>
+            <ComplexFeature name="coord" distanceMetric="Euclidean">
+                <SimpleFeature name="xCoord" distanceMetric="Absolute" stringValue="null" value="30.0"/>
+                <SimpleFeature name="yCoord" distanceMetric="Absolute" stringValue="null" value="100.0"/>
+            </ComplexFeature>
+            <SimpleFeature name="sqft" distanceMetric="Absolute" stringValue="null" value="800.0"/>
+            <SimpleFeature name="age" distanceMetric="Absolute" stringValue="new" value="-1.0"/>
+        </Input>
+        <Output>
+            <SimpleFeature name="output" distanceMetric="Absolute" stringValue="null" value="400000.0"/>
+        </Output>
+    </TrainingExample>
+    <TestingExample name="h4">
+        <Input>
+            <ComplexFeature name="coord" distanceMetric="Euclidean">
+                <SimpleFeature name="xCoord" distanceMetric="Absolute" stringValue="null" value="15.0"/>
+                <SimpleFeature name="yCoord" distanceMetric="Absolute" stringValue="null" value="20.0"/>
+            </ComplexFeature>
+            <SimpleFeature name="sqft" distanceMetric="Absolute" stringValue="null" value="1000.0"/>
+            <SimpleFeature name="age" distanceMetric="Absolute" stringValue="new" value="-1.0"/>
+        </Input>
+    </TestingExample>
+    <TestingExample name="h5">
+        <Input>
+            <ComplexFeature name="coord" distanceMetric="Euclidean">
+                <SimpleFeature name="xCoord" distanceMetric="Absolute" stringValue="null" value="32.0"/>
+                <SimpleFeature name="yCoord" distanceMetric="Absolute" stringValue="null" value="110.0"/>
+            </ComplexFeature>
+            <SimpleFeature name="sqft" distanceMetric="Absolute" stringValue="null" value="820.0"/>
+            <SimpleFeature name="age" distanceMetric="Absolute" stringValue="old" value="-1.0"/>
+        </Input>
+    </TestingExample>
+</knn>
+
